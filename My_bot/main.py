@@ -7,7 +7,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 
-from My_bot.routers import begin_router
+from routers import begin_router
 
 TOKEN = '7390413214:AAHzCi9PnSYZVWKmJcwWXlDD46Wk0d-EFaw'
 
