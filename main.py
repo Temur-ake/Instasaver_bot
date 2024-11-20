@@ -6,12 +6,11 @@ from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 
-from routers import begin_router
+from handlers import begin_router
 
 TOKEN = '7390413214:AAHzCi9PnSYZVWKmJcwWXlDD46Wk0d-EFaw'
 
 dp = Dispatcher()
-d = 0
 
 
 async def main() -> None:

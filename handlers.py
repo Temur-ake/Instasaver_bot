@@ -37,8 +37,17 @@ async def sent_to_video(message: Message, bot: Bot) -> None:
             await message.answer('@instasave_studiobot - Eng sevimli videolaringizni yuklab oling ✅!')
         else:
             await bot.delete_message(chat_id=message.chat.id, message_id=message.message_id)
-            sent = await message.answer(text=f"<b>Error(Link, Url) or Post Not Found !!! </b>")
+            sent = await message.answer(text=f"<b> Link hato yoki Post topilmadi !!! </b>")
             await asyncio.sleep(3)
             await bot.delete_message(chat_id=message.chat.id, message_id=sent.message_id)
     except:  # noqa
-        await message.answer("Place try again!")
+        await message.answer("Yana urunib ko'ring !")
+
+
+
+
+begin_router = Router()
+
+begin_router.include_router(
+    router,
+)
